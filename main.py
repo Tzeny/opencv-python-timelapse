@@ -7,9 +7,9 @@ done = False
 
 while not done:
     try:
-        cap = cv2.VideoCapture("rtsp://tzeny:ghtwaylat@192.168.0.108/live")
+        cap = cv2.VideoCapture("rtsp://tzeny:ghtwaylat@192.168.0.102/live")
 
-        output_path = './output/'
+        output_path = '/home/pi/opencv-python-timelapse/output/'
 
         while(cap.isOpened()):
             ret, frame = cap.read()
